@@ -1,9 +1,8 @@
 package main
 
-import (
-	rutine "github.com/victoryRo/concurrence/gorutine"
-)
+import "github.com/victoryRo/concurrence/syncro"
 
 func main() {
-	rutine.SendAction()
+	//rutine.SendAction()
+	syncro.ExecPkg()
 }
