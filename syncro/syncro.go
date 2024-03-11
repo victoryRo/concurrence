@@ -46,6 +46,6 @@ func timerConcurrent(duration []int) {
 func ExecPkg() {
 	times := []int{1, 2, 5}
 
-	//timer(times)
+	// timer(times)
 	timerConcurrent(times)
 }
