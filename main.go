@@ -1,9 +1,12 @@
 package main
 
-import "github.com/victoryRo/concurrence/mutex"
+import rutine "github.com/victoryRo/concurrence/gorutine"
 
 func main() {
 	// rutine.SendAction()
 	//syncro.ExecPkg()
-	mutex.CheckMutex()
+	//mutex.CheckMutex()
+	rutine.DataRace()
+	//rutine.DataRaceInLoop()
+	//rutine.DataRaceMap()
 }
