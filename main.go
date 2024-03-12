@@ -1,12 +1,13 @@
 package main
 
-import rutine "github.com/victoryRo/concurrence/gorutine"
+import "github.com/victoryRo/concurrence/canal"
 
 func main() {
 	// rutine.SendAction()
 	//syncro.ExecPkg()
 	//mutex.CheckMutex()
-	rutine.DataRace()
+	//rutine.DataRace()
 	//rutine.DataRaceInLoop()
 	//rutine.DataRaceMap()
+	canal.SendChannels()
 }
