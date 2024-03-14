@@ -9,5 +9,7 @@ func main() {
 	//rutine.DataRace()
 	//rutine.DataRaceInLoop()
 	//rutine.DataRaceMap()
-	canal.SendChannels()
+	//canal.SendChannels()
+	canal.ChannelPkg()
+	// mutex.CheckChannelsCSP()
 }
