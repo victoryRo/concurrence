@@ -45,10 +45,11 @@ func DataRaceInLoop() {
 	wg.Add(5)
 
 	for i := 0; i < 5; i++ {
-		go func(j int) {
+		j := i
+		go func() {
 			fmt.Println(j)
 			wg.Done()
-		}(i)
+		}()
 	}
 
 	wg.Wait()

@@ -34,10 +34,10 @@ func timerConcurrent(duration []int) {
 
 	for _, t := range duration {
 		tt := t
-		go func(tm int) {
-			executeTime(tm)
+		go func() {
+			executeTime(tt)
 			wg.Done()
-		}(tt)
+		}()
 	}
 	wg.Wait()
 }
